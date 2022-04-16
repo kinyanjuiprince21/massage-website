@@ -1,0 +1,361 @@
+@media screen and (min-width:1310px) {
+    .nav-bar  .menu-toggle, *[aria-labelledy='Menu toggle button'] {
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 503px) and (max-width: 1310px){
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        background-color: #1b1b1b;
+        margin: 0;
+        transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        transform: translateX(100%);
+        z-index: 1;
+    }
+    .nav-links li a:hover {
+        cursor: pointer;
+        background-color: rgb(0, 0, 0);
+        color: orange;
+        border: 2px solid rgb(248, 170, 0);
+    }
+    .menu-toggle {
+        display: inline-block;
+        padding: 1.5em;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        z-index: 2;
+    }
+    .hamburger {
+        display: block;
+        position: relative;
+    }
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        width: 2.5em;
+        height: 2px;
+        background-color: white;
+    }
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: transform 0.5s ease-in-out;
+    }
+    .hamburger::before {
+        top: 8px;
+    }
+      
+    .hamburger::after {
+        bottom: 8px;
+    }
+    .nav-open .nav-links {
+        right: 10%;
+        transform: translate(0);
+    }
+    .nav-open .menu-toggle {
+        position: fixed;
+        right: 10%;
+    }
+    .nav-open .hamburger {
+        transform: rotate(45deg);
+    }
+    .nav-open .hamburger::before {
+        transform: rotate(90deg) translateX(-8px);
+    }
+    .nav-open .hamburger::after {
+        opacity: 0;
+    }
+    .main-body {
+        height: 550px;
+        background-size: cover;
+    }
+    .main-body p {
+        font-size: 1.4rem;
+    }
+    .main-body #relaxation {
+        margin-bottom: 50px;
+    }
+    .main-body #with {
+        font-size: 1.2rem;
+        padding-top: 60px;
+    }
+    .main-body #massage {
+        font-size: 1.6rem;
+        padding-top: 20px;
+    }
+    .wrapper {
+        top: 60%;
+        left: 30%;
+    }
+    .about .container-about {
+        width: 100%;
+        height: fit-content;
+        padding: 16px 32px;
+        text-align: center;
+        flex-direction: column;
+    }
+    .container-about h1 {
+        font-size: 1.7rem;
+    }
+    .text {
+        font-size: 0.9rem;
+    }
+    .about #drag-container {
+        display: none;
+    }
+    .services {
+        width: 100%;
+    }
+    .single-service {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .service h2 {
+        font-size: 30px;
+    }
+    footer {
+        height: fit-content;
+    }
+    footer .link-boxes {
+        flex-direction: column;
+    }
+    footer .link-boxes .box {
+        width: 100%;
+    }
+    .link-boxes .box .link_name {
+        font-size: 1.3rem;
+    }
+    .link-boxes .box li a{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (min-width:1280px) and (max-width:1310px) {
+    .wrapper {
+        left: 35%;
+    }
+}
+@media screen and (min-width:912px) and (max-width:1310px) {
+    .link-boxes .box .link_name {
+        font-size: 2.6rem;
+    }
+    .link-boxes .box .shower {
+        font-size: 1.6rem;
+    }
+    .link-boxes .box li a {
+        font-size: 1.6rem;
+    }
+    .footer-text {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-width:503px) and (max-width:540px) {
+    .wrapper {
+        left: 20%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        background-color: #1b1b1b;
+        margin: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        z-index: 1;
+    }
+    .nav-links li a:hover {
+        cursor: pointer;
+        background-color: rgb(0, 0, 0);
+        color: orange;
+        border: 2px solid rgb(248, 170, 0);
+    }
+    .menu-toggle {
+        display: inline-block;
+        padding: 1.5em;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        z-index: 2;
+    }
+    .hamburger {
+        display: block;
+        position: relative;
+    }
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        width: 2.5em;
+        height: 2px;
+        background-color: white;
+    }
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: transform 0.5s ease-in-out;
+    }
+    .hamburger::before {
+        top: 8px;
+    }
+      
+    .hamburger::after {
+        bottom: 8px;
+    }
+    .nav-open .nav-links {
+        right: 10%;
+        transform: translate(0);
+    }
+    .nav-open .menu-toggle {
+        position: fixed;
+        right: 10%;
+    }
+    .nav-open .hamburger {
+        transform: rotate(45deg);
+    }
+    .nav-open .hamburger::before {
+        transform: rotate(90deg) translateX(-8px);
+    }
+    .nav-open .hamburger::after {
+        opacity: 0;
+    }
+    .main-body #relaxation {
+        margin-bottom: 60px;
+    }
+    .main-body #with {
+        font-size: 1.2rem;
+        padding-top: 60px;
+    }
+    .main-body #massage {
+        font-size: 1.4rem;
+        padding-top: 15px;
+    }
+    .wrapper {
+        left: 10%;
+    }
+    .main-body {
+        height: 550px;
+        background-size: cover;
+    }
+    .main-body p {
+        font-size: 1.4rem;
+    }
+    .about .container-about {
+        width: 100%;
+        height: fit-content;
+        padding: 16px 32px;
+        text-align: center;
+        flex-direction: column;
+    }
+    .container-about h1 {
+        font-size: 1.7rem;
+    }
+    .text {
+        font-size: 0.9rem;
+    }
+    .about #drag-container {
+        display: none;
+    }
+    .services {
+        width: 100%;
+    }
+    .single-service {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .service h2 {
+        font-size: 30px;
+    }
+    footer {
+        height: fit-content;
+    }
+    footer .link-boxes {
+        flex-direction: column;
+    }
+    footer .link-boxes .box {
+        width: 100%;
+    }
+    .link-boxes .box .link_name {
+        font-size: 1.3rem;
+    }
+    .link-boxes .box li a{
+        font-size: 1.0rem;
+    }
+}
+@media screen and (max-width:416px) {
+    html,body {
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    .single-service #text-more {
+      white-space: pre-line;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+}
+@media screen and (max-width:395px) {
+    .main-body #relaxation {
+        margin-bottom: 40px;
+        font-size: 1.2em;
+    }
+    .main-body #massage {
+        font-size: 1.25em;
+    }
+}
+@media screen and (max-width:363px) {
+    .main-body #massage {
+        font-size: 1.1em;
+    }
+    .wrapper {
+        left: 5%;
+    }
+}
+@media screen and (max-width:285px) {
+
+    .main-body #relaxation {
+        margin-bottom: 30px;
+        font-size: 0.9em;
+    }
+    .main-body #massage {
+        font-size: 0.75em;
+    }
+    .wrapper button {
+        padding: 1em 1em;
+        right: 0;
+    }
+    #services h2 {
+        font-size: 2rem;
+    }
+    .single-service h3 {
+        font-size: 1.1rem;
+    }
+}
