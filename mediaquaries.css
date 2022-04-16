@@ -5,7 +5,12 @@
         overflow: hidden;
     }
 }
-@media screen and (min-width: 503px) and (max-width: 1310px){
+@media screen and (min-width: 501px) and (max-width: 1310px){
+    html,body {
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
     .nav-links {
         position: fixed;
         top: 0;
