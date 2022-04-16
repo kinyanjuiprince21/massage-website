@@ -18,9 +18,9 @@
         bottom: 0;
         left: 0;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
-        height: 100%;
+        height: 100vh;
         background-color: #1b1b1b;
         margin: 0;
         transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -88,22 +88,20 @@
         opacity: 0;
     }
     .main-body {
-        height: 550px;
         background-size: cover;
     }
     .main-body p {
-        font-size: 1.4rem;
+        font-size: 2.0rem;
     }
     .main-body #relaxation {
-        margin-bottom: 50px;
+        padding-bottom: 10px;
     }
     .main-body #with {
-        font-size: 1.2rem;
-        padding-top: 60px;
+        font-size: 1.4rem;
     }
     .main-body #massage {
-        font-size: 1.6rem;
-        padding-top: 20px;
+        font-size: 2.6rem;
+        padding-top: 10px;
     }
     .wrapper {
         top: 60%;
@@ -171,9 +169,15 @@
     }
 }
 @media screen and (min-width:503px) and (max-width:540px) {
-    .wrapper {
-        left: 20%;
-    }
+   .main-body #relaxation {
+       font-size: 1.4rem;
+   }
+   .main-body #with {
+       font-size: 1.0rem;
+   }
+   .main-body #massage {
+       font-size: 1.7rem;
+   }
 }
 @media screen and (max-width: 500px) {
     html,body {
@@ -188,7 +192,7 @@
         bottom: 0;
         left: 0;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         height: 100%;
         background-color: #1b1b1b;
@@ -258,15 +262,15 @@
         opacity: 0;
     }
     .main-body #relaxation {
-        margin-bottom: 60px;
+        padding-bottom: 10px;
+        font-size: 1.3rem;
     }
     .main-body #with {
         font-size: 1.2rem;
-        padding-top: 60px;
     }
     .main-body #massage {
-        font-size: 1.4rem;
-        padding-top: 15px;
+        font-size: 1.3rem;
+        padding-top: 10px;
     }
     .wrapper {
         left: 10%;
@@ -334,29 +338,38 @@
 }
 @media screen and (max-width:395px) {
     .main-body #relaxation {
-        margin-bottom: 40px;
+        margin-bottom: 10px;
         font-size: 1.2em;
     }
     .main-body #massage {
-        font-size: 1.25em;
+        font-size: 1.1em;
     }
 }
 @media screen and (max-width:363px) {
+    .main-body #relaxation {
+        font-size: 1.1rem;
+    }
     .main-body #massage {
-        font-size: 1.1em;
+        font-size: 1.0em;
     }
     .wrapper {
         left: 5%;
+    }
+    .single-service h3 {
+        font-size: 1.5rem;
     }
 }
 @media screen and (max-width:285px) {
 
     .main-body #relaxation {
-        margin-bottom: 30px;
-        font-size: 0.9em;
+        margin-bottom: 10px;
+        font-size: 0.7em;
+    }
+    .main-body #with {
+        font-size: 0.9rem;
     }
     .main-body #massage {
-        font-size: 0.75em;
+        font-size: 0.65em;
     }
     .wrapper button {
         padding: 1em 1em;
